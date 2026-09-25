@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+@import './all_blocks/fonts';
+@import './all_blocks/variables';
+@import './all_blocks/mixin';
+
+body {
+  overflow-x: hidden;
+  font-family: $barlow_font;
+  background-color: $white_color;
+}
+
+.container {
+  max-width: 1310px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
+@import './all_blocks/navbar';
+@import './all_blocks/hero';
+@import './all_blocks/collection';
+@import './all_blocks/works';
+@import './all_blocks/footer';

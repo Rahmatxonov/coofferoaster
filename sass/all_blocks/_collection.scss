@@ -1,0 +1,76 @@
+.collection {
+  background-image: url('../../images/collection-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 196px;
+  background-position-y: -15px;
+  @include tablet {
+    background-image: url('../../images/collection-tablet.png');
+    height: 100px;
+  }
+  @include mobile {
+    background-image: url('../../images/collection-mobile.png');
+    height: 72px;
+    background-position-x: -10px;
+  }
+  @include mobile-x {
+    background-position-x: -40px;
+  }
+  &__box {
+    max-width: 255px;
+    width: 100%;
+    text-align: center;
+    margin-top: 135px;
+    @include tablet {
+      display: flex;
+      align-items: center;
+      max-width: 573px;
+      width: 100%;
+      margin-top: 0px;
+    }
+    @include mobile {
+      flex-direction: column;
+      max-width: 282px;
+      width: 100%;
+    }
+  }
+  &__card {
+    @include flex;
+    margin-top: 136px;
+    flex-wrap: wrap;
+    @include tablet {
+      justify-content: center;
+      margin-top: 144px;
+      padding-top: 48px;
+      row-gap: 32px;
+    }
+    @include mobile {
+      row-gap: 48px;
+      padding-top: 90px;
+    }
+  }
+
+  &__title {
+    font: {
+      family: $Fraunces_font;
+      weight: 900;
+      size: 24px;
+    }
+    line-height: 32px;
+    text-align: center;
+    color: $text_hover;
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: $text_hover;
+    padding-top: 24px;
+    @include mobile {
+      padding-top: 16px;
+      font-size: 15px;
+      line-height: 25px;
+    }
+  }
+}

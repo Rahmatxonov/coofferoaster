@@ -1,0 +1,85 @@
+footer {
+  background-color: $footer_color;
+}
+
+.footer {
+  padding: 47px 0px;
+  margin-top: 200px;
+  @include flex;
+  flex-wrap: wrap;
+
+  @include tablet {
+    max-width: 283px;
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 65px;
+    margin-top: 144px;
+  }
+  &__left {
+    display: flex;
+    align-items: center;
+    column-gap: 103px;
+    @include tablet {
+      flex-wrap: wrap;
+      row-gap: 33px;
+    }
+  }
+  &__menu {
+    display: flex;
+    align-items: center;
+    column-gap: 33px;
+    @include tablet {
+      column-gap: 18px;
+    }
+    @include mobile {
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 122px;
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      row-gap: 24px;
+    }
+  }
+  &__item {
+    color: $gray_color;
+    text-transform: uppercase;
+    transition: 0.3s;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.92px;
+  }
+  &__item:hover {
+    color: $white_color;
+    cursor: pointer;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+  }
+
+  &__icons {
+    font-size: 25px;
+    color: $white_color;
+    transition: 0.3s;
+  }
+  &__icons:hover {
+    color: $icon_color;
+    cursor: pointer;
+  }
+}
+
+.facebook:hover {
+  color: #3b579d;
+}
+.twitter:hover {
+  color: #00a2f3;
+}
+
+.instagram:hover {
+}
