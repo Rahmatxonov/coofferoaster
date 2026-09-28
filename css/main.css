@@ -280,6 +280,7 @@ body {
 
 .works {
   margin-top: 400px;
+  background-color: cornflowerblue;
 }
 @media (max-width: 835px) {
   .works {
